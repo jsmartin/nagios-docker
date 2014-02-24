@@ -7,7 +7,7 @@ check_docker is a [Nagios](http://www.nagios.org) plugin to check [Docker's](htt
 
 copy check_docker somewhere in your path.  This document assumes /usr/local/bin.
 
-	cp check_docker /usr/local/bin
+	cp check_docker /usr/local/bin/
 	chmod +x /usr/local/bin/check_docker
 
 ###  Conifguration
