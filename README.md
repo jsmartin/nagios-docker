@@ -88,10 +88,10 @@ Requires the following modules installable using pip:
 
 * [docker-py](https://github.com/dotcloud/docker-py)
 * [nagiosplugin](http://pythonhosted.org/nagiosplugin/)
- 
- To install this you can run:
 
-	pip install -r requirements.txt
+To install this you can run:
+
+    pip install -r requirements.txt
 	
 	
 ### User Interface
