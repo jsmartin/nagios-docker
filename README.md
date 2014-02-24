@@ -14,10 +14,10 @@ copy check_docker somewhere in your path.  This document assumes /usr/local/bin.
 
 #### Docker 
 
-The Docker API can be accessed from a URL.    On Ubuntu 13.10, the default URL is a socket (`unix://var/run/docker.sock`), however, this requires additional configuration for Nagios because it must act as a priviledged user (using sudo) to access.
+The Docker API can be accessed from a URL.    On Ubuntu 13.10, the default URL is a socket (`unix://var/run/docker.sock`). This requires additional configuration for Nagios because only a priviledged user can access that file.
 
 
-The other alternative is to access the API via a URL, but that must be enabled in `/etc/init/docker.conf`:
+The other alternative is to access the API via a HTTP URL, but that must be enabled in `/etc/init/docker.conf`:
 
 Make sure you set the `DOCKER_OPTS` value:
 
