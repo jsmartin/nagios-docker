@@ -32,11 +32,11 @@ class Docker(nagiosplugin.Resource):
         # can't.
         try:
             docker_info = conn.info()
-            self.docker_running = 0
+            self.docker_running = True
         except:
-            self.docker_running = 1
+            self.docker_running = False
 
-        if self.docker_running == 0:
+        if self.docker_running == True:
             self.images = docker_info['Images']
             self.go_routines = docker_info['NGoroutines']
             self.file_descriptors = docker_info['NFd']
